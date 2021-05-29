@@ -1,0 +1,73 @@
+Ex00
+
+#include <stdio.h>
+#include <string.h>
+
+int	main()
+{
+	char *str1;
+	char *str2;
+
+	str1 = "";
+	str2 = "alex";
+	printf("%d \n", ft_strcmp(str1, str2));
+	printf("%d", strcmp(str1, str2));
+}
+
+ex01
+
+#include <stdio.h>
+#include <string.h>
+
+int	main()
+{
+	char *str1;
+	char *str2;
+
+	str1 = "alexandre";
+	str2 = "alex";
+	printf("%d \n", ft_strncmp(str1, str2, 5));
+	printf("%d", strncmp(str1, str2, 5));
+}
+
+ex02
+
+#include <stdio.h>
+int	main()
+{
+	char *src;
+	char *dest;
+
+	dest[0] = 'S';
+	src = "salut";
+	printf("%s", ft_strcat(dest, src));
+}
+
+ex03
+
+#include <stdio.h>
+int	main()
+{
+	char *src;
+	char *dest;
+
+	dest[0] = 'S';
+	src = "salut";
+	printf("%s", ft_strcat(dest, src));
+}
+
+ex04
+
+#include <stdio.h>
+#include <string.h>
+
+int	main()
+{
+	char *str;
+	char *to_find;
+
+	str = "abcdefgh";
+	to_find = "";
+	printf("%s\n", strstr(str, to_find));
+	printf("%s", ft_strstr(str, to_find));
+}

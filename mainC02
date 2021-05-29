@@ -1,0 +1,170 @@
+ex00
+
+#include <stdio.h>
+
+int	main()
+{
+	char *src;
+	char dest[5];
+
+	src = "salut";	
+	printf("%s", ft_strcpy(dest, src));
+}
+
+ex01
+
+#include <stdio.h>
+
+int	main()
+{
+	char *src;
+	char dest[5];
+
+	src = "salut";
+	printf("%s", ft_strncpy(dest, src, 2));
+}
+
+ex02
+
+#include <stdio.h>
+
+int	main()
+{
+	char *str1;
+	char *str2;
+	char *str3;
+
+	str1 = "salut";
+	str2 = "salut2";
+	str3 = "";
+	printf("%d %d %d", ft_str_is_alpha(str1), ft_str_is_alpha(str2), ft_str_is_alpha(str3));
+}
+
+ex03
+
+#include <stdio.h>
+
+int	main()
+{
+	char *str1;
+	char *str2;
+	char *str3;
+
+	str1 = "salut";
+	str2 = "0129";
+	str3 = "";
+	printf("%d %d %d", ft_str_is_numeric(str1), ft_str_is_numeric(str2), ft_str_is_numeric(str3));
+}
+
+ex04
+
+#include <stdio.h>
+
+int	main()
+{
+	char *str1;
+	char *str2;
+	char *str3;
+
+	str1 = "abc";
+	str2 = "AWE";
+	str3 = "aBc";
+	printf("%d %d %d", ft_str_is_lowercase(str1), ft_str_is_lowercase(str2), ft_str_is_lowercase(str3));
+}
+
+ex05
+
+#include <stdio.h>
+
+int	main()
+{
+	char *str1;
+	char *str2;
+	char *str3;
+
+	str1 = "ABC";
+	str2 = "ABc";
+	str3 = "";
+	printf("%d %d %d", ft_str_is_uppercase(str1), ft_str_is_uppercase(str2), ft_str_is_uppercase(str3));
+}
+
+ex06
+
+#include <stdio.h>
+
+int	main()
+{
+	char *str1;
+	char *str2;
+	char *str3;
+
+	str1 = "salut";
+	str2[0] = 127;
+	str3 = "";
+	printf("%d %d %d", ft_str_is_printable(str1), ft_str_is_printable(str2), ft_str_is_printable(str3));	
+}
+
+ex07
+
+#include <stdio.h>
+
+int	main()
+{
+	char str1[] = "aBcDe";
+	
+	printf("%s", ft_strupcase(str1));
+}
+
+ex08
+
+#include <stdio.h>
+
+int	main()
+{
+	char str1[] = "OOOOH";
+	char str2[] = "oooF";
+
+	printf("%s %s", ft_strlowcase(str1),  ft_strlowcase(str2));
+}
+
+ex09
+
+#include <stdio.h>
+
+int	main()
+{
+	char str[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un moi cA vA pAS TroP Mal";
+
+	printf("%s", ft_strcapitalize(str));
+}
+
+ex10
+
+#include <stdio.h>
+#include <string.h>
+
+int	main()
+{
+	char dest1[] = "test";
+	char *src1;
+
+	src1 = "abcdefghijkl";
+	printf("%d\n", ft_strlcpy(dest1, src1, 0));
+	printf("%s\n", dest1);
+	char dest2[] = "test";
+	char *src2;
+
+	src2 = "abcdefghijkl";
+	printf("%lu\n", strlcpy(dest2, src2, 0));
+	printf("%s", dest2); 
+}
+
+ex11
+
+int	main()
+{
+	char *str;
+
+	str = "Coucou\ntu vas bien ?";
+	ft_putstr_non_printable(str);
+}

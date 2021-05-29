@@ -1,0 +1,19 @@
+ex03
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int	main()
+{
+	printf("%d\n", ft_atoi("123a456"));
+	printf("%d", atoi("123a456"));
+}
+
+ex04
+
+#include <stdio.h>
+
+int	main()
+{
+	ft_putnbr_base(667, "ekip");
+}

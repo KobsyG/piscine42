@@ -1,0 +1,19 @@
+int	main(void)
+{
+	int tab[7] = {0, 1, 5, 8, 4, 5, 6};
+	int i;	
+	i = 0;
+	while (i < 7)
+	{
+		printf("%d ", tab[i]);
+		i++;
+	}
+	printf("\n");
+	ft_sort_int_tab(tab, 7);
+	i = 0;
+	while (i < 7)
+	{	
+		printf("%d ", tab[i]);
+		i++;
+	}
+}
